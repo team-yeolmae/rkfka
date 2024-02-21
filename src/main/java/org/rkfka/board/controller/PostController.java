@@ -3,6 +3,10 @@ package org.rkfka.board.controller;
 import lombok.RequiredArgsConstructor;
 import org.rkfka.board.domain.dto.*;
 import org.rkfka.board.service.PostService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -39,13 +43,29 @@ public class PostController {
 
         UpdatePostResponse response = postService.updatePost(postId, request);
 
-        return null;
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     //게시글 삭제
+    @DeleteMapping("/{postId}")
+    public ResponseEntity<DeletePostResponse> postDelete(@PathVariable Long postId) {
+
+        DeletePostResponse response = postService.deletePost(postId);
+
+        return new ResponseEntity<>(response, HttpStatus.OK);
+
+    }
 
     //게시글 전체 조회(리스트-> 페이징)
+    @GetMapping
+    public ResponseEntity<Page<ReadPostResponse>> readAll(
+            @PageableDefault(size = 5, sort = "postID", direction = Sort.Direction.DESC)Pageable pageable
+            ) {
 
+        Page<ReadPostResponse> responses = postService.readAllPost(pageable);
 
+        return new ResponseEntity<>(responses, HttpStatus.OK);
+
+    }
 
 }
