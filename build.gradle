@@ -38,6 +38,9 @@ dependencies {
 
     //mysql
     runtimeOnly 'com.mysql:mysql-connector-j'
+
+    //assertJ (Assertions)
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.21.0'
 }
 
 tasks.named('bootBuildImage') {
