@@ -18,6 +18,7 @@ notion googledrive
 ---
 # 아키텍쳐
 ## 디렉토리 구조
+```bash
 C:.                                  
 ├─main                               
 │  ├─generated                       
