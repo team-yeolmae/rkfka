@@ -3,6 +3,11 @@ Stacks ✒
 ### Environment Tool
 Intellij git gthub
 
+### 프로젝트
+## 프로젝트명
+# 습관 형성 챌린지 웹앱
+***
+
 ## 설치 방법
 ```bash
 git clone https://github.com/team-yeolmae/challenge.git
