@@ -5,7 +5,8 @@ Intellij git gthub
 
 ## 설치 방법
 ```bash
-git clone 
+git clone
+```
 
 ### Config
 dd
