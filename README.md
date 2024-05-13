@@ -5,7 +5,7 @@ Intellij git gthub
 
 ## 설치 방법
 ```bash
-git clone
+git clone https://github.com/team-yeolmae/challenge.git
 ```
 
 ### Config
