@@ -1,5 +1,5 @@
 # 프로젝트📒
-## Hustle Log 프로젝트
+## Hustle Log 프로젝트(로고 이미지 추가하면 좋을 듯!)
 ### 프로젝트 소개
 갓생을 살 수 있도록 도와주는 동기부여 웹 어플리케이션 개발 프로젝트입니다.
 <br>
@@ -27,12 +27,11 @@ notion googledrive
 # 설치 방법🗃️
 ```bash
 git clone https://github.com/team-yeolmae/challenge.git
-git submodule
 ```
----
+***
 # 화면 구성 📺
-웹 화면 이미지 및 움직이는 사진 또는, 동영상 삽입
----
++++웹 화면 이미지 및 움직이는 사진 또는, 동영상 삽입
+***
 # 아키텍쳐
 ## 디렉토리 구조
 ```bash
@@ -68,3 +67,7 @@ C:.
             └─yeolmae
                 └─challenge
 ```
+***
+# 팀소
+열매
+
